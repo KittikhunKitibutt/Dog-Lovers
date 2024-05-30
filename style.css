@@ -1,0 +1,76 @@
+h1 {
+      font-size: 5em;
+      color: #219587;
+      text-align: center;
+      transition: font-size 3s ease-out 1s, color 3s ease-in 1s; 
+     }
+
+h1:hover {
+     cursor: pointer;
+     font-size: 8em;
+     color: #0f5526;
+
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style:oblique;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+
+.fade:hover
+{
+  opacity:.5;
+}
+
+body {background-color: bisque;}
+
+.reverse-fade
+{
+  opacity:0.5;
+}
+.reverse-fade:hover
+{
+  opacity:1;
+}
+
+.saturate:hover {  
+  filter: saturate(3) drop-shadow(5px 5px 8px gray);
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 30%;
+  transition: .5s ease;
+  opacity:0;
+  display: block;
+  margin-left: 35%;
+  color: white;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+p {text-align: center;
+  margin-bottom:5em;
+}
