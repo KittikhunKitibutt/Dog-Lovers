@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dog Lovers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Oswald:wght@200..700&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<style>
+h1 {
+      font-size: 5em;
+      color: #219587;
+      text-align: center;
+      transition: font-size 3s ease-out 1s, color 3s ease-in 1s; 
+     }
+
+h1:hover {
+     cursor: pointer;
+     font-size: 8em;
+     color: #0f5526;
+
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style:oblique;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+
+.fade:hover
+{
+  opacity:.5;
+}
+
+body {background-color: bisque;}
+
+.reverse-fade
+{
+  opacity:0.5;
+}
+.reverse-fade:hover
+{
+  opacity:1;
+}
+
+.saturate:hover {  
+  filter: saturate(3) drop-shadow(5px 5px 8px gray);
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 30%;
+  transition: .5s ease;
+  opacity:0;
+  display: block;
+  margin-left: 35%;
+  color: white;
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+p {text-align: center;
+  margin-bottom:5em;
+}
+
+</style>
+<body>
+    <article>
+     <header>   
+    <h1 class="lora">Chihuahua Lovers</h1>
+    </header>
+    <section>
+
+
+        <img class="reverse-fade" src="pexels-alexasfotos-12228460.jpg" alt="Brown Dog on Green Grass">
+        <p><cite>Alexas Fotos:Brown Dog on Green Grass
+        </cite> by <a href="https://www.pexels.com/photo/brown-dog-on-green-grass-12228460/" target="_blank">Pexels</a></p>
+
+
+        <img class="fade" src="pexels-blooddrainer-17887472.jpg" alt="Chihuahua on Tree Trunk"> 
+        <p><cite>Anton Atanasov:Chihuahua on Tree Trunk
+        </cite> by <a href="https://www.pexels.com/photo/chihuahua-on-tree-trunk-17887472/" target="_blank">Pexels</a></p>
+
+        <img class="saturate" src="pexels-bigworldinalens-55952276-16282713.jpg" alt="Dog Running on Lawn
+        "> 
+        <p><cite>Bigworldinalens:Dog Running on Lawn
+
+        </cite> by <a href="https://www.pexels.com/photo/dog-running-on-lawn-16282713/" target="_blank">Pexels</a></p>
+        
+
+        <div class="container">
+        <img src="pexels-franzi-2058734-15084223.jpg" alt="Avatar" class="Chihuahua in Close Up
+        ">
+        <div class="overlay">Chihuahua</div>
+        </div>
+        <p><cite>Franzi:Chihuahua in Close Up
+        </cite> by <a href="https://www.pexels.com/photo/chihuahua-in-close-up-15084223/" target="_blank">Pexels</a></p>
+
+
+    </section>
+
+
+    </article>
+
+          <footer>
+               <p>&copy; 2024 by Kittikhun Kitibutt for BATECH 189</p> 
+          </footer>
+
+</body>
+
+
+</html>
